@@ -8,7 +8,7 @@ import {
   validatePhone,
   validateUsername,
   validatePassword,
-} from '@/form-validations/AddUserValidations';
+} from '@/form-validations/UserValidations';
 import { useUpdateUserStore } from '@/stores/updateUserStore';
 
 interface UserUpdateModalProps {

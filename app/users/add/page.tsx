@@ -12,7 +12,7 @@ import {
     validatePassword,
     validateHeight,
     validateWeight
-} from '@/form-validations/AddUserValidations';
+} from '@/form-validations/UserValidations';
 
 const AddUserPage = () => {
     const router = useRouter();
