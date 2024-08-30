@@ -9,7 +9,7 @@ interface UserStore {
   selectedUser: User | null;
   isModalOpen: boolean;
   fetchUsers: () => Promise<void>;
-  fetchUserById: (id: number) => Promise<void>;  // New method
+  fetchUserById: (id: number) => Promise<void>;  
   handleDeleteUser: (userId: number) => Promise<void>;
   handleUpdateClick: (user: User) => void;
   closeModal: () => void;
@@ -29,7 +29,7 @@ export const useUserStore = create<UserStore>((set) => ({
       set({ error: 'Failed to fetch users', loading: false });
     }
   },
-  fetchUserById: async (id: number) => {  // New method
+  fetchUserById: async (id: number) => {  
     set({ loading: true, error: null });
     try {
       const fetchedUser = await getUserById(id);
